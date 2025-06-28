@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">
+  <button class="top-left-name">Aahil Hasnain</button>
+  <div class="right-bars">
+    <a href="index.html"><button class="choice-buttons">Home</button></a>
+    <a href="projects.html"><button class="choice-buttons">Projects</button></a>
+    <a href="contact.html"><button class="choice-buttons">Email</button></a>
+  </div>
+</div>
+<br>
+<div class="contact-page" style="text-align: center">
+<div class="contact-info">
+<h2 style="text-align: center; font-size: 40px;">Send me a message</h2>
+<p style="font-size: 25px;">Name</p>
+<input type="text" style="background-color: hsl(0, 15%, 78%)" placeholder="First Name" id="fname">
+<input type="text" style="background-color: hsl(0, 15%, 78%)" placeholder="Last Name" id="lname"> <br>
+<p style="font-size: 25px;">Email</p>
+<input type="text" style="background-color: hsl(0, 15%, 78%); width: 13rem" placeholder="Your Email" id="email"> <br>
+<p style="font-size: 25px;">Message</p>
+<textarea style="background-color: hsl(0, 15%, 78%); resize: none" placeholder="Leave a message" id="message"></textarea> <br>
+<button style="border-radius: 20px;" class="submit">Submit</button>
+<p id="error-label"></p>
+</div>
+</div>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+emailjs.init("7jpHQLoQNn6MeFHLt");
+</script>
+<script src="cog.js"></script>
+</body>
+</html>
